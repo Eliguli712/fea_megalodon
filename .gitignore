@@ -1,0 +1,16 @@
+# --- COLMAP / scanning big artifacts ---
+scanning/**/db.db
+scanning/**/database.db
+scanning/**/sparse_out/
+scanning/**/dense/
+scanning/**/stereo/
+scanning/**/images.bin
+scanning/**/points3D.bin
+scanning/**/cameras.bin
+scanning/**/images.txt
+scanning/**/points3D.txt
+scanning/**/cameras.txt
+
+# --- big meshes / docs (we'll store via LFS or elsewhere) ---
+*.obj
+*.pdf
