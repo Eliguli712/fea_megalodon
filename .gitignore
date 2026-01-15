@@ -25,3 +25,11 @@ scanning/**/cameras.txt
 
 # macOS
 .DS_Store
+**/*.db
+**/*.db-wal
+**/*.db-shm
+**/colmap_ws/
+**/sparse_out/
+**/colmap_workspace/
+**/images/**/sparse/**
+.DS_Store
