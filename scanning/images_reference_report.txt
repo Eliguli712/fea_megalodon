@@ -1,0 +1,1 @@
+/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/scanning/scanning_process.ipynb:171:    "colmap feature_extractor --database_path db.db --image_path . --FeatureExtraction.use_gpu 0 --ImageReader.single_camera 1\n",
