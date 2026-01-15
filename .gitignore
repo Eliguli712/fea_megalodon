@@ -14,3 +14,14 @@ scanning/**/cameras.txt
 # --- big meshes / docs (we'll store via LFS or elsewhere) ---
 *.obj
 *.pdf
+# --- COLMAP / scanning generated outputs ---
+**/*.db
+**/*.db-wal
+**/*.db-shm
+**/colmap_ws/
+**/sparse_out/
+**/colmap_workspace/
+**/images/**/sparse/**
+
+# macOS
+.DS_Store
