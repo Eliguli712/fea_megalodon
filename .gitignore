@@ -33,3 +33,6 @@ scanning/**/cameras.txt
 **/colmap_workspace/
 **/images/**/sparse/**
 .DS_Store
+
+# Large PDF kept locally
+scanning/Meg_proj.pdf
