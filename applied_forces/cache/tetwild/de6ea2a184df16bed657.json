@@ -1,0 +1,47 @@
+{
+  "meta_raw": {
+    "stl_path": "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tooth_from_dicom_seg_fullres.stl",
+    "raw_n_vertices": 2653818,
+    "raw_n_faces": 884606,
+    "raw_bounds_min": [
+      0.0,
+      7.75,
+      1.350000023841858
+    ],
+    "raw_bounds_max": [
+      37.75,
+      21.850000381469727,
+      50.35000228881836
+    ],
+    "raw_extents": [
+      37.75,
+      14.100000381469727,
+      49.0000022649765
+    ]
+  },
+  "meta_tetready": {
+    "watertight_before": false,
+    "watertight_after": false,
+    "tetready_n_vertices": 441927,
+    "tetready_n_faces": 884674
+  },
+  "meta_export": {
+    "smooth_n_vertices": 8049,
+    "smooth_n_faces": 16160,
+    "smooth_n_edges": 24221,
+    "smooth_watertight": false
+  },
+  "params": {
+    "target_scale": null,
+    "taubin_iters": 12,
+    "taubin_lambda": 0.5,
+    "taubin_mu": -0.53,
+    "attempt_fill_holes": true,
+    "tetwild_api": "pytetwild.tetrahedralize",
+    "export_surface_from_tet_flag": true,
+    "export_taubin_iters": 6,
+    "export_taubin_lambda": 0.5,
+    "export_taubin_mu": -0.53,
+    "export_keep_largest_component": true
+  }
+}

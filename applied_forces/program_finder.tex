@@ -1,0 +1,113 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+
+\title{Program Finder Commands}
+\date{}
+\begin{document}
+\maketitle
+
+Assume you are already inside:
+\begin{verbatim}
+~/DataStructure/numerical_analysis/FEA_meg/applied_forces
+\end{verbatim}
+
+Conventions:
+\begin{verbatim}
+- To list only .py files:    -name "*.py"
+- To list only .ipynb files: -name "*.ipynb"
+- To list both:              \( -name "*.py" -o -name "*.ipynb" \)
+\end{verbatim}
+
+\begin{enumerate}
+\item \textbf{Find (names only; with size + timestamp).}
+
+\begin{verbatim}
+# both (.py and .ipynb)
+find . -type f \( -name "*.py" -o -name "*.ipynb" \) -exec ls -lhT {} \; \
+  | awk '{print $NF, $(NF-6), $(NF-5), $(NF-4), $(NF-3)}'
+
+# only .py
+find . -type f -name "*.py" -exec ls -lhT {} \; \
+  | awk '{print $NF, $(NF-6), $(NF-5), $(NF-4), $(NF-3)}'
+
+# only .ipynb
+find . -type f -name "*.ipynb" -exec ls -lhT {} \; \
+  | awk '{print $NF, $(NF-6), $(NF-5), $(NF-4), $(NF-3)}'
+\end{verbatim}
+
+\item \textbf{Sorted listing (stable order, names only).}
+
+\begin{verbatim}
+# both
+find . -type f \( -name "*.py" -o -name "*.ipynb" \) -exec basename {} \; | sort
+
+# only .py
+find . -type f -name "*.py" -exec basename {} \; | sort
+
+# only .ipynb
+find . -type f -name "*.ipynb" -exec basename {} \; | sort
+\end{verbatim}
+
+\item \textbf{Show sizes + timestamps (names only).}
+
+\begin{verbatim}
+# both
+find . -type f \( -name "*.py" -o -name "*.ipynb" \) -exec ls -lhT {} \; \
+  | awk '{print $NF, $(NF-6), $(NF-5), $(NF-4), $(NF-3)}'
+\end{verbatim}
+
+\item \textbf{Output to a file (names only).}
+
+\begin{verbatim}
+# both
+find . -type f \( -name "*.py" -o -name "*.ipynb" \) -exec basename {} \; \
+  | sort > applied_forces_programs.txt
+
+# only .py
+find . -type f -name "*.py" -exec basename {} \; \
+  | sort > applied_forces_py.txt
+
+# only .ipynb
+find . -type f -name "*.ipynb" -exec basename {} \; \
+  | sort > applied_forces_ipynb.txt
+\end{verbatim}
+
+\item \textbf{Count how many you have.}
+
+\begin{verbatim}
+# both
+find . -type f \( -name "*.py" -o -name "*.ipynb" \) -exec basename {} \; | wc -l
+
+# only .py
+find . -type f -name "*.py" -exec basename {} \; | wc -l
+
+# only .ipynb
+find . -type f -name "*.ipynb" -exec basename {} \; | wc -l
+\end{verbatim}
+
+\item \textbf{Only notebooks (or only python).}
+
+\begin{verbatim}
+# only .ipynb
+find . -type f -name "*.ipynb" -exec basename {} \; | sort
+
+# only .py
+find . -type f -name "*.py" -exec basename {} \; | sort
+\end{verbatim}
+
+\item \textbf{ripgrep-style listing (fast), names only.}
+
+\begin{verbatim}
+# both
+rg --files . -g "*.py" -g "*.ipynb" | xargs -I{} basename "{}" | sort
+
+# only .py
+rg --files . -g "*.py" | xargs -I{} basename "{}" | sort
+
+# only .ipynb
+rg --files . -g "*.ipynb" | xargs -I{} basename "{}" | sort
+\end{verbatim}
+
+\end{enumerate}
+
+\end{document}

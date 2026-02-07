@@ -1,0 +1,16 @@
+{ "onelab":{
+  "creator":"Gmsh",
+  "date":"Thu Feb  5 10:36:14 2026",
+  "version":"1.3",
+  "parameters":[
+    { "type":"string", "name":"Gmsh/Action", "changedValue":0, "visible":false, "readOnly":false, "clients":{ "Gmsh":0 }, "values":[ "" ] , "kind":"generic" },
+    { "type":"string", "name":"Gmsh/Model absolute path", "changedValue":0, "visible":false, "readOnly":true, "attributes":{ "Closed":"0" }, "clients":{ "Gmsh":0 }, "values":[ "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/" ] , "kind":"generic" },
+    { "type":"number", "name":"Gmsh/Model dimension", "changedValue":1, "visible":false, "readOnly":true, "attributes":{ "Closed":"1" }, "clients":{ "Gmsh":31 }, "values":[ 2 ], "min":-1e+200, "max":1e+200, "step":0, "index":-1 },
+    { "type":"string", "name":"Gmsh/Model name", "changedValue":0, "visible":false, "readOnly":true, "attributes":{ "Closed":"0" }, "clients":{ "Gmsh":0 }, "values":[ "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tooth_from_dicom_seg_fullres.stl" ] , "kind":"file" },
+    { "type":"string", "name":"Gmsh/MshFileName", "label":"Mesh name", "changedValue":31, "visible":true, "readOnly":false, "attributes":{ "Closed":"0" }, "clients":{ "Gmsh":2 }, "values":[ "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tooth_from_dicom_seg_fullres.stl" ] , "kind":"file" },
+    { "type":"number", "name":"Gmsh/Number of physical groups", "changedValue":1, "visible":false, "readOnly":true, "attributes":{ "Closed":"1" }, "clients":{ "Gmsh":31 }, "values":[ 0 ], "min":-1e+200, "max":1e+200, "step":0, "index":-1 },
+    { "type":"string", "name":"Gmsh/}Input files", "changedValue":31, "visible":false, "readOnly":true, "attributes":{ "AutoCheck":"0" }, "clients":{ "Gmsh":31 }, "values":[ "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tooth_from_dicom_seg_fullres.stl" ] , "kind":"file", "choices":[ "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tooth_from_dicom_seg_fullres.stl" ] },
+    { "type":"string", "name":"ONELAB/Action", "changedValue":0, "visible":false, "readOnly":false, "attributes":{ "Persistent":"1" }, "values":[ "save" ] , "kind":"generic" },
+    { "type":"string", "name":"ONELAB/Button", "changedValue":3, "visible":false, "readOnly":false, "attributes":{ "Persistent":"1" }, "clients":{ "Gmsh":2 }, "values":[ "" ] , "kind":"generic" }
+  ] }
+}

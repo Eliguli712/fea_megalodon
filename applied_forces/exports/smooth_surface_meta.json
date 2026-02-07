@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "source_units_in": "mm",
+    "units_out": "mm",
+    "scale_applied_total": 1.0,
+    "watertight_before": false,
+    "watertight_after": false,
+    "n_vertices": 7793,
+    "n_faces": 15619,
+    "bounds_min": [
+      0.02571468,
+      7.776524,
+      1.390451
+    ],
+    "bounds_max": [
+      37.7145,
+      21.69858,
+      50.33124
+    ],
+    "extents": [
+      37.68878532,
+      13.922056,
+      48.940789
+    ],
+    "source_path": "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/__tracked_surface.stl"
+  },
+  "config": {
+    "stl_path": null,
+    "prefer_buffer_names": [
+      "__tracked_surface.stl",
+      "tet_outer_raw.obj",
+      "raw_surface.obj"
+    ],
+    "out_dir": "./exports",
+    "stem": "smooth_surface",
+    "input_unit": "mm",
+    "output_unit": "mm",
+    "extra_scale": 1.0,
+    "taubin_iters": 0,
+    "taubin_lambda": 0.5,
+    "taubin_mu": -0.53,
+    "attempt_fill_holes": true,
+    "run_tetwild": true,
+    "use_cache": true,
+    "cache_dir": "~/.cache/mesh_pipeline",
+    "cache_tag": "v3",
+    "score_params": {
+      "gap_mm": 0.08,
+      "bridge_target": 0.03,
+      "boundary_tol": 0,
+      "sample_n": 20000,
+      "k_schedule": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        12,
+        16
+      ],
+      "local_top_frac": 0.05,
+      "hole_rounds": 3,
+      "require_watertight": false
+    },
+    "score_weights": {
+      "w_k": 0.02,
+      "w_not_watertight": 0.35,
+      "w_boundary_over_tol": 2e-06,
+      "w_bad": 6e-06,
+      "w_nonmanifold": 2e-05,
+      "w_bridge": 3.0,
+      "w_area": 1e-06,
+      "w_dA": 2.0,
+      "w_dV": 5.0,
+      "w_dH": 1.0
+    },
+    "report_uniform_samples": 2048,
+    "show_vis": false,
+    "vis_window_size": [
+      900,
+      700
+    ]
+  },
+  "extra": {
+    "best_info": {
+      "component_index": 0,
+      "k": 0,
+      "watertight": false,
+      "boundary_edges": 88,
+      "bad_edges": 99,
+      "nonmanifold_edges": 11,
+      "bridge_risk": 0.0,
+      "area": 2710.7645861670535,
+      "diag": 63.320368050941596,
+      "metrics": {
+        "dA": 0.0,
+        "dV": null,
+        "dH95": 0.9051128483946549
+      },
+      "score": 0.36257341714800234,
+      "gap_used": 0.08
+    },
+    "uniform_sampling": {
+      "n": 2048,
+      "nn_mean": 0.9645534252886696,
+      "nn_p10": 0.8475577109980761,
+      "nn_p50": 0.9439795201042867,
+      "nn_p90": 1.1167959013896396
+    }
+  },
+  "timestamp": 1770479362.8126101
+}
