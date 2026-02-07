@@ -36,3 +36,7 @@ scanning/**/cameras.txt
 
 # Large PDF kept locally
 scanning/Meg_proj.pdf
+applied_forces/_dicom_tmp_regen2/
+**/_dicom_tmp_*/
+**/*.dcm
+**/*.dicom
