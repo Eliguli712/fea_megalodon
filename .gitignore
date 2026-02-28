@@ -1,43 +1,33 @@
-# --- COLMAP / scanning big artifacts ---
-scanning/**/db.db
-scanning/**/database.db
-scanning/**/sparse_out/
-scanning/**/dense/
-scanning/**/stereo/
-scanning/**/images.bin
-scanning/**/points3D.bin
-scanning/**/cameras.bin
-scanning/**/images.txt
-scanning/**/points3D.txt
-scanning/**/cameras.txt
+# Python / OS
+__pycache__/
+*.pyc
+.venv*/
+.DS_Store
+.ipynb_checkpoints/
 
-# --- big meshes / docs (we'll store via LFS or elsewhere) ---
+# FEA / simulation outputs (common)
+results/
+output/
+runs/
+logs/
+cache/
+tmp/
+
+# Large scientific artifacts
+*.vtk
+*.vtu
+*.vtp
+*.stl
 *.obj
-*.pdf
-# --- COLMAP / scanning generated outputs ---
-**/*.db
-**/*.db-wal
-**/*.db-shm
-**/colmap_ws/
-**/sparse_out/
-**/colmap_workspace/
-**/images/**/sparse/**
+*.msh
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.pt
+*.ckpt
 
-# macOS
-.DS_Store
-**/*.db
-**/*.db-wal
-**/*.db-shm
-**/colmap_ws/
-**/sparse_out/
-**/colmap_workspace/
-**/images/**/sparse/**
-.DS_Store
-
-# Large PDF kept locally
-scanning/Meg_proj.pdf
-applied_forces/_dicom_tmp_regen2/
-**/_dicom_tmp_*/
-**/*.dcm
-**/*.dicom
-applied_forces/_dicom_tmp_regen2/20260121190722_CT_ISRA_0.dcm
+# Archives
+*.zip
+*.tar
+*.gz
