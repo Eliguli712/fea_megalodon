@@ -1,0 +1,70 @@
+{
+  "dataset": "dicom_16um",
+  "description": "Split release manifest for the 16um uCT Scanco archive.",
+  "source_name": "16um uCT Scanco.zip",
+  "assembled_name": "16um uCT Scanco.zip",
+  "source_path": "DICOM_16um/16um uCT Scanco.zip",
+  "repo": "Eliguli712/fea_megalodon",
+  "release_tag": "ct-dicom-16um",
+  "manifest_asset": "16um_uCT_Scanco.zip.release.json",
+  "chunk_size": 1992294400,
+  "byte_size": 20740036482,
+  "sha256": "6597ec6683f90e2ae63984d6d2db5b979cfaac59f1e3313556504c9b55c01d86",
+  "assets": [
+    {
+      "name": "16um_uCT_Scanco.zip.part-000",
+      "size": 1992294400,
+      "sha256": "ac503aa93c9a578d052d290a9acb0c48f43bed4dc61766982122f13e72b0bedb"
+    },
+    {
+      "name": "16um_uCT_Scanco.zip.part-001",
+      "size": 1992294400,
+      "sha256": "1cdfb5de923b1f33f8f80c53f19c82db6e4bd60aa77caec0e47a9e8d21e389cb"
+    },
+    {
+      "name": "16um_uCT_Scanco.zip.part-002",
+      "size": 1992294400,
+      "sha256": "9b56a8219d1377ee0cc6005c0cf1f1604f92817de979c02c28a42a70fbced32a"
+    },
+    {
+      "name": "16um_uCT_Scanco.zip.part-003",
+      "size": 1992294400,
+      "sha256": "24ab7832a4fa277ab019bb12e385fdf722dcd03f5086be533c1600181a274b9e"
+    },
+    {
+      "name": "16um_uCT_Scanco.zip.part-004",
+      "size": 1992294400,
+      "sha256": "be4d9a637c069ae77faa0bdd414ee62b29bc81ce3e9e956427657f641960a3ee"
+    },
+    {
+      "name": "16um_uCT_Scanco.zip.part-005",
+      "size": 1992294400,
+      "sha256": "994b775a82a939374255bf3ebceb96bb7a33ffd3af162726b9049013a0b4de61"
+    },
+    {
+      "name": "16um_uCT_Scanco.zip.part-006",
+      "size": 1992294400,
+      "sha256": "8a34498443679b703ae8d74f7d75cddd24a799621ae2ac742d4cd766a691b344"
+    },
+    {
+      "name": "16um_uCT_Scanco.zip.part-007",
+      "size": 1992294400,
+      "sha256": "0bb1be902f0cce93e5ef67e7d8039c76ad22ae408c227c93395146670b4f797c"
+    },
+    {
+      "name": "16um_uCT_Scanco.zip.part-008",
+      "size": 1992294400,
+      "sha256": "5cd3a3002fc98e8c290804db6ed83af33c9f5cabb76fd8545ef65315e848d0ab"
+    },
+    {
+      "name": "16um_uCT_Scanco.zip.part-009",
+      "size": 1992294400,
+      "sha256": "cdca94df14b59cdca8b283a892eef040b3b7c347a012803d83e07027ad27bf18"
+    },
+    {
+      "name": "16um_uCT_Scanco.zip.part-010",
+      "size": 817092482,
+      "sha256": "baac994b619103843c8141d68ae3cbaaf9e1a5f702cec91d963434af36db6a19"
+    }
+  ]
+}

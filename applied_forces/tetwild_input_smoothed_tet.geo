@@ -1,0 +1,13 @@
+Merge "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tetwild_input_smoothed_watertight.stl";
+sl[] = Surface "*";
+Surface Loop(1) = {sl[]};
+Volume(1) = {1};
+Mesh.CharacteristicLengthMin = 0.35;
+Mesh.CharacteristicLengthMax = 1.0;
+Mesh.Algorithm3D = 1;
+Mesh.ElementOrder = 1;
+Mesh.Optimize = 1;
+Mesh.OptimizeNetgen = 1;
+General.NumThreads = 8;
+Mesh 3;
+Save "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tetwild_input_smoothed_tet_vol.msh";

@@ -1,0 +1,71 @@
+{
+  "input": "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tetwild_input_smoothed.obj",
+  "units_assumed": "mm",
+  "preprocess": {
+    "area_coverage": 0.99,
+    "taubin_lambda": 0.45,
+    "taubin_nu": -0.53,
+    "taubin_iterations": 8,
+    "voxel_n_axis": 120,
+    "voxel_pitch": 0.40780725674352997
+  },
+  "raw_surface": {
+    "vertices": 441927,
+    "faces": 884674,
+    "watertight": false,
+    "winding_consistent": true,
+    "components": 1,
+    "boundary_edges": 912,
+    "nonmanifold_edges": 0,
+    "euler_number": -866
+  },
+  "watertight_surface": {
+    "vertices": 44436,
+    "faces": 89192,
+    "watertight": true,
+    "winding_consistent": true,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "euler_number": -160
+  },
+  "gmsh": {
+    "characteristic_length_min": 0.9,
+    "characteristic_length_max": 2.8,
+    "algorithm_3d": 1,
+    "element_order": 1,
+    "optimize": 1,
+    "optimize_netgen": 1,
+    "num_threads": 8,
+    "msh_format": "msh2"
+  },
+  "outputs": {
+    "watertight_obj": "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tetwild_input_smoothed_comsol_watertight.obj",
+    "watertight_stl": "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tetwild_input_smoothed_comsol_watertight.stl",
+    "geo_recipe": "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tetwild_input_smoothed_comsol_tet.geo",
+    "volume_msh": "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tetwild_input_smoothed_comsol_tet_vol.msh",
+    "volume_bdf": "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tetwild_input_smoothed_comsol_tet_vol.bdf"
+  },
+  "mesh_counts": {
+    "points": 48006,
+    "triangle": 89192,
+    "tetra": 153319
+  },
+  "comsol_import": {
+    "preferred": {
+      "format": "Nastran (.bdf)",
+      "file": "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tetwild_input_smoothed_comsol_tet_vol.bdf",
+      "mesh_feature_type": "Import"
+    },
+    "alternate": {
+      "format": "Gmsh v2.2 (.msh)",
+      "file": "/Users/eliguli712/DataStructure/numerical_analysis/FEA_meg/applied_forces/tetwild_input_smoothed_comsol_tet_vol.msh",
+      "mesh_feature_type": "Import"
+    },
+    "notes": [
+      "Linear tetrahedra (first-order CTETRA4).",
+      "Boundary triangles are preserved for boundary selections.",
+      "If model units differ, set unit scale during COMSOL import."
+    ]
+  }
+}
